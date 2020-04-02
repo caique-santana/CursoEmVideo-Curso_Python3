@@ -2,3 +2,12 @@
 O primeiro valor é maior
 O segundo valor é maior
 Não existe valor maior, os dois são iguais """
+# Meu
+num1 = int(input('Digite o primeiro valor: '))
+num2 = int(input('Digite o segundo valor: '))
+if num1 > num2:
+    print('O \033[1;34mprimeiro\033[m valor é o maior')
+elif num2 > num1:
+    print('O \033[1;34msegundo\033[m valor é o maior')
+else:
+    print('Os dois valores são \033[1;36miguais\033[m.')
