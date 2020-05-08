@@ -8,3 +8,14 @@ Saida:
 Olá, Mundo!
 ~~~~~~~~~~~
 """
+
+
+def escreva(txt):
+    print('~' * len(txt))
+    print(f'{txt}')
+    print('~' * len(txt))
+
+
+escreva('Caique Santana')
+escreva('Curso de Python no YouTube')
+escreva('FeP')
