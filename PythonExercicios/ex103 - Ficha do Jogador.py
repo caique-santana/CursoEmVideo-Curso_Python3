@@ -15,8 +15,25 @@ if len(jogador) == 0:
         ficha(gols=gol)
     else:
         ficha()
-elif len(gol) == 0:
+elif len(gol) == 0 or not gol.isnumeric():
     ficha(jogador)
 else:
     ficha(jogador, gol)
 
+# Gustavo Guanabara
+
+
+def ficha(jog='<desconhecido>', gol=0):
+    print(f'O jogardor {jog} fez {gol} gol(s) no campeonato.')
+
+
+n = str(input('Nome do Jogador: '))
+g = str(input('Número de Gols: '))
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+if n.strip() == '':
+    ficha(gol=g)
+else:
+    ficha(n, g)
